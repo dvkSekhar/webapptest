@@ -91,7 +91,7 @@ public class PhoneBookImpl implements PhoneBook {
 	/*
 	 * This method prints the Phone Book to the console and also writes to the Database.
 	 */
-	private void insertPhoneBook(List<Person> prsnPhnList) throws SQLException, ClassNotFoundException {
+	public void insertPhoneBook(List<Person> prsnPhnList) throws SQLException, ClassNotFoundException {
 			Connection con = DatabaseUtil.getConnection();
 			Statement stmt = con.createStatement();
 			StringBuilder sql = null;
